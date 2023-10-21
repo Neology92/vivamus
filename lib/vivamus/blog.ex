@@ -48,9 +48,9 @@ defmodule Vivamus.Blog do
 
   """
   @spec create_post(map()) :: {:ok, Blog.Post.t()} | {:error, Ecto.Changeset.t()}
-  def create_post(attrs \\ %{}) do
-    attrs
-    |> Blog.Post.changeset()
+  def create_post(attrs) do
+    %Blog.Post{}
+    |> Blog.Post.changeset(attrs)
     |> Repo.insert()
   end
 
