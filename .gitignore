@@ -35,3 +35,5 @@ vivamus-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# vscode things
+.vscode/
