@@ -11,6 +11,13 @@ defmodule Vivamus.Blog.Post do
 
   @required_fields ~w(content)a
 
+  @type id :: integer()
+  @type t :: %__MODULE__{
+          content: String.t(),
+          user_id: id(),
+          id: id()
+        }
+
   @doc false
   def changeset(post, attrs) do
     post
