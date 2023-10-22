@@ -20,7 +20,7 @@ defmodule VivamusWeb.Router do
   scope "/", VivamusWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", BlogController, :home
   end
 
   # Other scopes may use custom stacks.
